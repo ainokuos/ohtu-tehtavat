@@ -92,5 +92,5 @@ class TestOstoskori(unittest.TestCase):
         self.kori.lisaa_tuote(leipa)
         self.kori.tyhjenna()
         self.assertEqual(self.kori.tavaroita_korissa(), 0)
-        self.assert
+        self.assertEqual(len(self.kori.ostokset()), 0)
     
