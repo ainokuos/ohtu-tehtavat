@@ -24,7 +24,6 @@ class IntJoukko:
         for i in range(0, self.alkioiden_lkm):
             if n == self.ljono[i]:
                 return True
-
         return False
 
     def lisaa(self, n):
@@ -38,9 +37,9 @@ class IntJoukko:
             self.alkioiden_lkm += 1
 
             if self.alkioiden_lkm % len(self.ljono) == 0:
-                taulukko_old = self.ljono
+                vanha_taulukko = self.ljono
                 self.ljono = [0] * (self.alkioiden_lkm + self.kasvatuskoko)
-                self.kopioi_taulukko(taulukko_old, self.ljono)
+                self.kopioi_taulukko(vanha_taulukko, self.ljono)
 
             return True
 
