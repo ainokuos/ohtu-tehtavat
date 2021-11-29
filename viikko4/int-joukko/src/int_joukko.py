@@ -53,8 +53,6 @@ class IntJoukko:
             if n == self.ljono[i]:
                 kohta = i  # siis luku löytyy tuosta kohdasta :D
                 self.ljono[kohta] = 0
-                break
-
         if kohta != -1:
             for j in range(kohta, self.alkioiden_lkm - 1):
                 apu = self.ljono[j]
